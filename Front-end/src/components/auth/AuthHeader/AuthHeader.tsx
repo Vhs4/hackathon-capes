@@ -5,7 +5,7 @@ import TrocarTema from '../../TrocarTema/TrocarTema'
 
 const AuthHeader = () => {
     return (
-        <nav className="w-full flex flex-col pt-4 mx-auto px-[18.22%]">
+        <nav className="w-full flex flex-col pt-4">
             <div className="flex w-full justify-between">
                 <div className="flex gap-[10px] items-center">
                     <a href='https://www.gov.br/pt-br' target='_blank'>
