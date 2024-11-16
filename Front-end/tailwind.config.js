@@ -11,6 +11,9 @@ export default {
       'light': '#fff',
       'dark': '#000',
     }),
+    boxShadow: {
+      'button-variant-2': '0px 8px 16px 0px rgba(0, 0, 0, 0.15);'
   },
+},
   plugins: [],
 }
