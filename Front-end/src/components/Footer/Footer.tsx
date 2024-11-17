@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
     'CEP: 70.040-031'
   ];
 
-  const copyrightText = '© 2020. Todos os direitos reservados.';
+  const copyrightText = '© 2024. Todos os direitos reservados.';
   const termsText = 'Termos de Uso';
   const backToTopText = 'Voltar ao topo';
 
