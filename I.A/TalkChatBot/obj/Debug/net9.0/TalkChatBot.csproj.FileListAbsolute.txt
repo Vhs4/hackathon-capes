@@ -1,0 +1,15 @@
+C:\Users\igorb\Source\Repos\hackathon-capes\I.A\TalkChatBot\bin\Debug\net9.0\TalkChatBot.exe
+C:\Users\igorb\Source\Repos\hackathon-capes\I.A\TalkChatBot\bin\Debug\net9.0\TalkChatBot.deps.json
+C:\Users\igorb\Source\Repos\hackathon-capes\I.A\TalkChatBot\bin\Debug\net9.0\TalkChatBot.runtimeconfig.json
+C:\Users\igorb\Source\Repos\hackathon-capes\I.A\TalkChatBot\bin\Debug\net9.0\TalkChatBot.dll
+C:\Users\igorb\Source\Repos\hackathon-capes\I.A\TalkChatBot\bin\Debug\net9.0\TalkChatBot.pdb
+C:\Users\igorb\Source\Repos\hackathon-capes\I.A\TalkChatBot\obj\Debug\net9.0\TalkChatBot.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\igorb\Source\Repos\hackathon-capes\I.A\TalkChatBot\obj\Debug\net9.0\TalkChatBot.AssemblyInfoInputs.cache
+C:\Users\igorb\Source\Repos\hackathon-capes\I.A\TalkChatBot\obj\Debug\net9.0\TalkChatBot.AssemblyInfo.cs
+C:\Users\igorb\Source\Repos\hackathon-capes\I.A\TalkChatBot\obj\Debug\net9.0\TalkChatBot.csproj.CoreCompileInputs.cache
+C:\Users\igorb\Source\Repos\hackathon-capes\I.A\TalkChatBot\obj\Debug\net9.0\TalkChatBot.sourcelink.json
+C:\Users\igorb\Source\Repos\hackathon-capes\I.A\TalkChatBot\obj\Debug\net9.0\TalkChatBot.dll
+C:\Users\igorb\Source\Repos\hackathon-capes\I.A\TalkChatBot\obj\Debug\net9.0\refint\TalkChatBot.dll
+C:\Users\igorb\Source\Repos\hackathon-capes\I.A\TalkChatBot\obj\Debug\net9.0\TalkChatBot.pdb
+C:\Users\igorb\Source\Repos\hackathon-capes\I.A\TalkChatBot\obj\Debug\net9.0\TalkChatBot.genruntimeconfig.cache
+C:\Users\igorb\Source\Repos\hackathon-capes\I.A\TalkChatBot\obj\Debug\net9.0\ref\TalkChatBot.dll

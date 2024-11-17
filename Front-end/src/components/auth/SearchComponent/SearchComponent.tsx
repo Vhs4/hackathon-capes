@@ -50,7 +50,6 @@ const SearchComponent = () => {
     const onSubmit = (data: FormValues) => {
         console.log("Formulário enviado com sucesso:", data);
         
-        // Construa a query string para a pesquisa
         const queryParams = new URLSearchParams();
         if (data.search) queryParams.append('search', data.search);
         if (data.semanticaOtimizada) queryParams.append('semanticaOtimizada', String(data.semanticaOtimizada));
@@ -60,7 +59,6 @@ const SearchComponent = () => {
         if (data.artigos) queryParams.append('artigos', String(data.artigos));
         if (data.tipoMaterial) queryParams.append('tipoMaterial', data.tipoMaterial);
         
-        // Navegue para a URL de pesquisa com os parâmetros
         navigate(`/search?${queryParams.toString()}`);
     };
 
