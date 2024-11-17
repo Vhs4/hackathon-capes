@@ -48,7 +48,7 @@ const Footer: React.FC = () => {
               <Address lines={addressLines} />
             </div>
           </div>
-          <div className="flex gap-5 self-end mt-7">
+          <div className="flex gap-5 justify-end mt-7">
             <Copyright text={copyrightText} />
             <div className="text-xs font-bold leading-5 text-blue-950">
               {termsText}

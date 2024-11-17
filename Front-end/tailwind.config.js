@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'mini': '375px',
+        'mini-max': '400px'
+      },
+    },
     backgroundColor: theme => ({
       ...theme('colors'),
       'light': '#fff',

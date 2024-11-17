@@ -85,7 +85,7 @@ const SearchComponent = () => {
 
 
     return (
-        <main className="flex flex-col">
+        <main className="flex flex-col max-w-screen-mini mini:max-w-screen-mini-max mini-max:max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg">
             <header className="flex flex-col max-w-full text-center text-neutral-800 w-[1220px]">
                 <div className="flex flex-col w-full max-md:max-w-full">
                     <div className="flex flex-col w-full max-md:max-w-full">
