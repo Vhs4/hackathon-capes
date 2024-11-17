@@ -1,4 +1,3 @@
-import React from 'react'
 import ButtonSystem from '../ButtonSystem/ButtonSystem'
 
 const TreinamentoSection = () => {

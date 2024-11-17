@@ -1,6 +1,4 @@
-import React from 'react'
 import TagButton from '../TagButton/TagButton';
-import { SectionTitle } from '../SectionTitle/SectionTitle';
 import ButtonSystem from '../ButtonSystem/ButtonSystem';
 import Cardinformativo from '../CardInformativo/CardInformativo';
 import CapesLabButton from '../CapesLabButton/CapesLabButton';
