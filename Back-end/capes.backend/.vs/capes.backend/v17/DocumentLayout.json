@@ -1,0 +1,613 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F37C97A6-2F87-49DF-AD82-1C32F156D226}|src\\Application\\Capes.Application.csproj|c:\\dev\\big-winners\\hackathon-capes\\back-end\\capes.backend\\src\\application\\services\\articleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F37C97A6-2F87-49DF-AD82-1C32F156D226}|src\\Application\\Capes.Application.csproj|solutionrelative:src\\application\\services\\articleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D60F0C57-527F-460C-9EAA-28D78CE39476}|Capes.Api.csproj|c:\\dev\\big-winners\\hackathon-capes\\back-end\\capes.backend\\controllers\\authenticatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D60F0C57-527F-460C-9EAA-28D78CE39476}|Capes.Api.csproj|solutionrelative:controllers\\authenticatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D60F0C57-527F-460C-9EAA-28D78CE39476}|Capes.Api.csproj|c:\\dev\\big-winners\\hackathon-capes\\back-end\\capes.backend\\controllers\\articlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D60F0C57-527F-460C-9EAA-28D78CE39476}|Capes.Api.csproj|solutionrelative:controllers\\articlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D60F0C57-527F-460C-9EAA-28D78CE39476}|Capes.Api.csproj|c:\\dev\\big-winners\\hackathon-capes\\back-end\\capes.backend\\controllers\\apicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D60F0C57-527F-460C-9EAA-28D78CE39476}|Capes.Api.csproj|solutionrelative:controllers\\apicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F37C97A6-2F87-49DF-AD82-1C32F156D226}|src\\Application\\Capes.Application.csproj|c:\\dev\\big-winners\\hackathon-capes\\back-end\\capes.backend\\src\\application\\interfaces\\services\\iarticleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F37C97A6-2F87-49DF-AD82-1C32F156D226}|src\\Application\\Capes.Application.csproj|solutionrelative:src\\application\\interfaces\\services\\iarticleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12ECA017-1A33-42D1-84C1-5F45F967D4D0}|src\\Domain\\Capes.Domain.csproj|c:\\dev\\big-winners\\hackathon-capes\\back-end\\capes.backend\\src\\domain\\models\\article.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12ECA017-1A33-42D1-84C1-5F45F967D4D0}|src\\Domain\\Capes.Domain.csproj|solutionrelative:src\\domain\\models\\article.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D60F0C57-527F-460C-9EAA-28D78CE39476}|Capes.Api.csproj|c:\\dev\\big-winners\\hackathon-capes\\back-end\\capes.backend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D60F0C57-527F-460C-9EAA-28D78CE39476}|Capes.Api.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D60F0C57-527F-460C-9EAA-28D78CE39476}|Capes.Api.csproj|c:\\dev\\big-winners\\hackathon-capes\\back-end\\capes.backend\\controllers\\basecrudcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D60F0C57-527F-460C-9EAA-28D78CE39476}|Capes.Api.csproj|solutionrelative:controllers\\basecrudcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE4ABBF2-132A-4D4D-AAAD-2CA77474B7B8}|src\\Capes.Infra\\Capes.Infra.csproj|c:\\dev\\big-winners\\hackathon-capes\\back-end\\capes.backend\\src\\capes.infra\\configurations\\infraconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE4ABBF2-132A-4D4D-AAAD-2CA77474B7B8}|src\\Capes.Infra\\Capes.Infra.csproj|solutionrelative:src\\capes.infra\\configurations\\infraconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F37C97A6-2F87-49DF-AD82-1C32F156D226}|src\\Application\\Capes.Application.csproj|c:\\dev\\big-winners\\hackathon-capes\\back-end\\capes.backend\\src\\application\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F37C97A6-2F87-49DF-AD82-1C32F156D226}|src\\Application\\Capes.Application.csproj|solutionrelative:src\\application\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D60F0C57-527F-460C-9EAA-28D78CE39476}|Capes.Api.csproj|c:\\dev\\big-winners\\hackathon-capes\\back-end\\capes.backend\\viewmodels\\uservm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D60F0C57-527F-460C-9EAA-28D78CE39476}|Capes.Api.csproj|solutionrelative:viewmodels\\uservm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D60F0C57-527F-460C-9EAA-28D78CE39476}|Capes.Api.csproj|c:\\dev\\big-winners\\hackathon-capes\\back-end\\capes.backend\\viewmodels\\retornopadrao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D60F0C57-527F-460C-9EAA-28D78CE39476}|Capes.Api.csproj|solutionrelative:viewmodels\\retornopadrao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12ECA017-1A33-42D1-84C1-5F45F967D4D0}|src\\Domain\\Capes.Domain.csproj|c:\\dev\\big-winners\\hackathon-capes\\back-end\\capes.backend\\src\\domain\\enums\\coursetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12ECA017-1A33-42D1-84C1-5F45F967D4D0}|src\\Domain\\Capes.Domain.csproj|solutionrelative:src\\domain\\enums\\coursetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12ECA017-1A33-42D1-84C1-5F45F967D4D0}|src\\Domain\\Capes.Domain.csproj|c:\\dev\\big-winners\\hackathon-capes\\back-end\\capes.backend\\src\\domain\\enums\\coursestatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12ECA017-1A33-42D1-84C1-5F45F967D4D0}|src\\Domain\\Capes.Domain.csproj|solutionrelative:src\\domain\\enums\\coursestatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D60F0C57-527F-460C-9EAA-28D78CE39476}|Capes.Api.csproj|c:\\dev\\big-winners\\hackathon-capes\\back-end\\capes.backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D60F0C57-527F-460C-9EAA-28D78CE39476}|Capes.Api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D60F0C57-527F-460C-9EAA-28D78CE39476}|Capes.Api.csproj|c:\\dev\\big-winners\\hackathon-capes\\back-end\\capes.backend\\viewmodels\\authvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D60F0C57-527F-460C-9EAA-28D78CE39476}|Capes.Api.csproj|solutionrelative:viewmodels\\authvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D60F0C57-527F-460C-9EAA-28D78CE39476}|Capes.Api.csproj|c:\\dev\\big-winners\\hackathon-capes\\back-end\\capes.backend\\profiles\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D60F0C57-527F-460C-9EAA-28D78CE39476}|Capes.Api.csproj|solutionrelative:profiles\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE4ABBF2-132A-4D4D-AAAD-2CA77474B7B8}|src\\Capes.Infra\\Capes.Infra.csproj|c:\\dev\\big-winners\\hackathon-capes\\back-end\\capes.backend\\src\\capes.infra\\migrations\\20241117010857_add prop gender in user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE4ABBF2-132A-4D4D-AAAD-2CA77474B7B8}|src\\Capes.Infra\\Capes.Infra.csproj|solutionrelative:src\\capes.infra\\migrations\\20241117010857_add prop gender in user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12ECA017-1A33-42D1-84C1-5F45F967D4D0}|src\\Domain\\Capes.Domain.csproj|c:\\dev\\big-winners\\hackathon-capes\\back-end\\capes.backend\\src\\domain\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12ECA017-1A33-42D1-84C1-5F45F967D4D0}|src\\Domain\\Capes.Domain.csproj|solutionrelative:src\\domain\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE4ABBF2-132A-4D4D-AAAD-2CA77474B7B8}|src\\Capes.Infra\\Capes.Infra.csproj|c:\\dev\\big-winners\\hackathon-capes\\back-end\\capes.backend\\src\\capes.infra\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE4ABBF2-132A-4D4D-AAAD-2CA77474B7B8}|src\\Capes.Infra\\Capes.Infra.csproj|solutionrelative:src\\capes.infra\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F37C97A6-2F87-49DF-AD82-1C32F156D226}|src\\Application\\Capes.Application.csproj|c:\\dev\\big-winners\\hackathon-capes\\back-end\\capes.backend\\src\\application\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F37C97A6-2F87-49DF-AD82-1C32F156D226}|src\\Application\\Capes.Application.csproj|solutionrelative:src\\application\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F37C97A6-2F87-49DF-AD82-1C32F156D226}|src\\Application\\Capes.Application.csproj|c:\\dev\\big-winners\\hackathon-capes\\back-end\\capes.backend\\src\\application\\interfaces\\services\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F37C97A6-2F87-49DF-AD82-1C32F156D226}|src\\Application\\Capes.Application.csproj|solutionrelative:src\\application\\interfaces\\services\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE4ABBF2-132A-4D4D-AAAD-2CA77474B7B8}|src\\Capes.Infra\\Capes.Infra.csproj|c:\\dev\\big-winners\\hackathon-capes\\back-end\\capes.backend\\src\\capes.infra\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE4ABBF2-132A-4D4D-AAAD-2CA77474B7B8}|src\\Capes.Infra\\Capes.Infra.csproj|solutionrelative:src\\capes.infra\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE4ABBF2-132A-4D4D-AAAD-2CA77474B7B8}|src\\Capes.Infra\\Capes.Infra.csproj|c:\\dev\\big-winners\\hackathon-capes\\back-end\\capes.backend\\src\\capes.infra\\repository\\baserepositoryef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE4ABBF2-132A-4D4D-AAAD-2CA77474B7B8}|src\\Capes.Infra\\Capes.Infra.csproj|solutionrelative:src\\capes.infra\\repository\\baserepositoryef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE4ABBF2-132A-4D4D-AAAD-2CA77474B7B8}|src\\Capes.Infra\\Capes.Infra.csproj|c:\\dev\\big-winners\\hackathon-capes\\back-end\\capes.backend\\src\\capes.infra\\repository\\baserepositoryproperties.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE4ABBF2-132A-4D4D-AAAD-2CA77474B7B8}|src\\Capes.Infra\\Capes.Infra.csproj|solutionrelative:src\\capes.infra\\repository\\baserepositoryproperties.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE4ABBF2-132A-4D4D-AAAD-2CA77474B7B8}|src\\Capes.Infra\\Capes.Infra.csproj|c:\\dev\\big-winners\\hackathon-capes\\back-end\\capes.backend\\src\\capes.infra\\configurations\\dbconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE4ABBF2-132A-4D4D-AAAD-2CA77474B7B8}|src\\Capes.Infra\\Capes.Infra.csproj|solutionrelative:src\\capes.infra\\configurations\\dbconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F37C97A6-2F87-49DF-AD82-1C32F156D226}|src\\Application\\Capes.Application.csproj|c:\\dev\\big-winners\\hackathon-capes\\back-end\\capes.backend\\src\\application\\services\\baseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F37C97A6-2F87-49DF-AD82-1C32F156D226}|src\\Application\\Capes.Application.csproj|solutionrelative:src\\application\\services\\baseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE4ABBF2-132A-4D4D-AAAD-2CA77474B7B8}|src\\Capes.Infra\\Capes.Infra.csproj|c:\\dev\\big-winners\\hackathon-capes\\back-end\\capes.backend\\src\\capes.infra\\configurations\\jwtconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE4ABBF2-132A-4D4D-AAAD-2CA77474B7B8}|src\\Capes.Infra\\Capes.Infra.csproj|solutionrelative:src\\capes.infra\\configurations\\jwtconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F37C97A6-2F87-49DF-AD82-1C32F156D226}|src\\Application\\Capes.Application.csproj|c:\\dev\\big-winners\\hackathon-capes\\back-end\\capes.backend\\src\\application\\interfaces\\services\\ibaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F37C97A6-2F87-49DF-AD82-1C32F156D226}|src\\Application\\Capes.Application.csproj|solutionrelative:src\\application\\interfaces\\services\\ibaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12ECA017-1A33-42D1-84C1-5F45F967D4D0}|src\\Domain\\Capes.Domain.csproj|c:\\dev\\big-winners\\hackathon-capes\\back-end\\capes.backend\\src\\domain\\exceptions\\businessexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12ECA017-1A33-42D1-84C1-5F45F967D4D0}|src\\Domain\\Capes.Domain.csproj|solutionrelative:src\\domain\\exceptions\\businessexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F37C97A6-2F87-49DF-AD82-1C32F156D226}|src\\Application\\Capes.Application.csproj|c:\\dev\\big-winners\\hackathon-capes\\back-end\\capes.backend\\src\\application\\interfaces\\repository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F37C97A6-2F87-49DF-AD82-1C32F156D226}|src\\Application\\Capes.Application.csproj|solutionrelative:src\\application\\interfaces\\repository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F37C97A6-2F87-49DF-AD82-1C32F156D226}|src\\Application\\Capes.Application.csproj|c:\\dev\\big-winners\\hackathon-capes\\back-end\\capes.backend\\src\\application\\interfaces\\repository\\ibaserepositoryef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F37C97A6-2F87-49DF-AD82-1C32F156D226}|src\\Application\\Capes.Application.csproj|solutionrelative:src\\application\\interfaces\\repository\\ibaserepositoryef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F37C97A6-2F87-49DF-AD82-1C32F156D226}|src\\Application\\Capes.Application.csproj|c:\\dev\\big-winners\\hackathon-capes\\back-end\\capes.backend\\src\\application\\capes.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F37C97A6-2F87-49DF-AD82-1C32F156D226}|src\\Application\\Capes.Application.csproj|solutionrelative:src\\application\\capes.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12ECA017-1A33-42D1-84C1-5F45F967D4D0}|src\\Domain\\Capes.Domain.csproj|c:\\dev\\big-winners\\hackathon-capes\\back-end\\capes.backend\\src\\domain\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12ECA017-1A33-42D1-84C1-5F45F967D4D0}|src\\Domain\\Capes.Domain.csproj|solutionrelative:src\\domain\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12ECA017-1A33-42D1-84C1-5F45F967D4D0}|src\\Domain\\Capes.Domain.csproj|c:\\dev\\big-winners\\hackathon-capes\\back-end\\capes.backend\\src\\domain\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12ECA017-1A33-42D1-84C1-5F45F967D4D0}|src\\Domain\\Capes.Domain.csproj|solutionrelative:src\\domain\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12ECA017-1A33-42D1-84C1-5F45F967D4D0}|src\\Domain\\Capes.Domain.csproj|c:\\dev\\big-winners\\hackathon-capes\\back-end\\capes.backend\\src\\domain\\models\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12ECA017-1A33-42D1-84C1-5F45F967D4D0}|src\\Domain\\Capes.Domain.csproj|solutionrelative:src\\domain\\models\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12ECA017-1A33-42D1-84C1-5F45F967D4D0}|src\\Domain\\Capes.Domain.csproj|c:\\dev\\big-winners\\hackathon-capes\\back-end\\capes.backend\\src\\domain\\models\\badge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12ECA017-1A33-42D1-84C1-5F45F967D4D0}|src\\Domain\\Capes.Domain.csproj|solutionrelative:src\\domain\\models\\badge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Article.cs",
+              "DocumentMoniker": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Domain\\Models\\Article.cs",
+              "RelativeDocumentMoniker": "src\\Domain\\Models\\Article.cs",
+              "ToolTip": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Domain\\Models\\Article.cs",
+              "RelativeToolTip": "src\\Domain\\Models\\Article.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAA2wA8AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T16:44:47.67Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ArticleController.cs",
+              "DocumentMoniker": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\Controllers\\ArticleController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ArticleController.cs",
+              "ToolTip": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\Controllers\\ArticleController.cs",
+              "RelativeToolTip": "Controllers\\ArticleController.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAswBYAAAB0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T13:05:06.924Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ArticleService.cs",
+              "DocumentMoniker": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Application\\Services\\ArticleService.cs",
+              "RelativeDocumentMoniker": "src\\Application\\Services\\ArticleService.cs",
+              "ToolTip": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Application\\Services\\ArticleService.cs",
+              "RelativeToolTip": "src\\Application\\Services\\ArticleService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T12:50:52.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IArticleService.cs",
+              "DocumentMoniker": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Application\\Interfaces\\Services\\IArticleService.cs",
+              "RelativeDocumentMoniker": "src\\Application\\Interfaces\\Services\\IArticleService.cs",
+              "ToolTip": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Application\\Interfaces\\Services\\IArticleService.cs",
+              "RelativeToolTip": "src\\Application\\Interfaces\\Services\\IArticleService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAoAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T12:50:34.147Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CourseType.cs",
+              "DocumentMoniker": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Domain\\Enums\\CourseType.cs",
+              "RelativeDocumentMoniker": "src\\Domain\\Enums\\CourseType.cs",
+              "ToolTip": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Domain\\Enums\\CourseType.cs",
+              "RelativeToolTip": "src\\Domain\\Enums\\CourseType.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T12:09:41.354Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CourseStatus.cs",
+              "DocumentMoniker": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Domain\\Enums\\CourseStatus.cs",
+              "RelativeDocumentMoniker": "src\\Domain\\Enums\\CourseStatus.cs",
+              "ToolTip": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Domain\\Enums\\CourseStatus.cs",
+              "RelativeToolTip": "src\\Domain\\Enums\\CourseStatus.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T12:09:26.235Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RetornoPadrao.cs",
+              "DocumentMoniker": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\ViewModels\\RetornoPadrao.cs",
+              "RelativeDocumentMoniker": "ViewModels\\RetornoPadrao.cs",
+              "ToolTip": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\ViewModels\\RetornoPadrao.cs",
+              "RelativeToolTip": "ViewModels\\RetornoPadrao.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T01:47:05.778Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AuthVm.cs",
+              "DocumentMoniker": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\ViewModels\\AuthVm.cs",
+              "RelativeDocumentMoniker": "ViewModels\\AuthVm.cs",
+              "ToolTip": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\ViewModels\\AuthVm.cs",
+              "RelativeToolTip": "ViewModels\\AuthVm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T01:27:38.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "20241117010857_add prop gender in user.cs",
+              "DocumentMoniker": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Capes.Infra\\Migrations\\20241117010857_add prop gender in user.cs",
+              "RelativeDocumentMoniker": "src\\Capes.Infra\\Migrations\\20241117010857_add prop gender in user.cs",
+              "ToolTip": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Capes.Infra\\Migrations\\20241117010857_add prop gender in user.cs",
+              "RelativeToolTip": "src\\Capes.Infra\\Migrations\\20241117010857_add prop gender in user.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T01:09:15.072Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "BaseService.cs",
+              "DocumentMoniker": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Application\\Services\\BaseService.cs",
+              "RelativeDocumentMoniker": "src\\Application\\Services\\BaseService.cs",
+              "ToolTip": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Application\\Services\\BaseService.cs",
+              "RelativeToolTip": "src\\Application\\Services\\BaseService.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T00:19:00.382Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "BaseRepositoryProperties.cs",
+              "DocumentMoniker": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Capes.Infra\\Repository\\BaseRepositoryProperties.cs",
+              "RelativeDocumentMoniker": "src\\Capes.Infra\\Repository\\BaseRepositoryProperties.cs",
+              "ToolTip": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Capes.Infra\\Repository\\BaseRepositoryProperties.cs",
+              "RelativeToolTip": "src\\Capes.Infra\\Repository\\BaseRepositoryProperties.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA8AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T23:44:10.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UserProfile.cs",
+              "DocumentMoniker": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\Profiles\\UserProfile.cs",
+              "RelativeDocumentMoniker": "Profiles\\UserProfile.cs",
+              "ToolTip": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\Profiles\\UserProfile.cs",
+              "RelativeToolTip": "Profiles\\UserProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T23:41:56.677Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "BaseRepositoryEF.cs",
+              "DocumentMoniker": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Capes.Infra\\Repository\\BaseRepositoryEF.cs",
+              "RelativeDocumentMoniker": "src\\Capes.Infra\\Repository\\BaseRepositoryEF.cs",
+              "ToolTip": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Capes.Infra\\Repository\\BaseRepositoryEF.cs",
+              "RelativeToolTip": "src\\Capes.Infra\\Repository\\BaseRepositoryEF.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T23:41:06.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Domain\\Models\\User.cs",
+              "RelativeDocumentMoniker": "src\\Domain\\Models\\User.cs",
+              "ToolTip": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Domain\\Models\\User.cs",
+              "RelativeToolTip": "src\\Domain\\Models\\User.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAA9wBAAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T23:31:55.484Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserVm.cs",
+              "DocumentMoniker": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\ViewModels\\UserVm.cs",
+              "RelativeDocumentMoniker": "ViewModels\\UserVm.cs",
+              "ToolTip": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\ViewModels\\UserVm.cs",
+              "RelativeToolTip": "ViewModels\\UserVm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T23:30:28.043Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T23:29:45.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "BusinessException.cs",
+              "DocumentMoniker": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Domain\\Exceptions\\BusinessException.cs",
+              "RelativeDocumentMoniker": "src\\Domain\\Exceptions\\BusinessException.cs",
+              "ToolTip": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Domain\\Exceptions\\BusinessException.cs",
+              "RelativeToolTip": "src\\Domain\\Exceptions\\BusinessException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T23:23:48.507Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "DbConfig.cs",
+              "DocumentMoniker": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Capes.Infra\\Configurations\\DbConfig.cs",
+              "RelativeDocumentMoniker": "src\\Capes.Infra\\Configurations\\DbConfig.cs",
+              "ToolTip": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Capes.Infra\\Configurations\\DbConfig.cs",
+              "RelativeToolTip": "src\\Capes.Infra\\Configurations\\DbConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T23:12:02.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "IBaseRepositoryEF.cs",
+              "DocumentMoniker": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Application\\Interfaces\\Repository\\IBaseRepositoryEF.cs",
+              "RelativeDocumentMoniker": "src\\Application\\Interfaces\\Repository\\IBaseRepositoryEF.cs",
+              "ToolTip": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Application\\Interfaces\\Repository\\IBaseRepositoryEF.cs",
+              "RelativeToolTip": "src\\Application\\Interfaces\\Repository\\IBaseRepositoryEF.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T22:57:16.89Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthenticatorController.cs",
+              "DocumentMoniker": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\Controllers\\AuthenticatorController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthenticatorController.cs",
+              "ToolTip": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\Controllers\\AuthenticatorController.cs",
+              "RelativeToolTip": "Controllers\\AuthenticatorController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAC0AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T22:53:59.737Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BaseCrudController.cs",
+              "DocumentMoniker": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\Controllers\\BaseCrudController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BaseCrudController.cs",
+              "ToolTip": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\Controllers\\BaseCrudController.cs",
+              "RelativeToolTip": "Controllers\\BaseCrudController.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAkwAgAAABrAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T22:50:56.39Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApiController.cs",
+              "DocumentMoniker": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\Controllers\\ApiController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ApiController.cs",
+              "ToolTip": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\Controllers\\ApiController.cs",
+              "RelativeToolTip": "Controllers\\ApiController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T22:44:46.974Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T22:43:06.114Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "JwtConfig.cs",
+              "DocumentMoniker": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Capes.Infra\\Configurations\\JwtConfig.cs",
+              "RelativeDocumentMoniker": "src\\Capes.Infra\\Configurations\\JwtConfig.cs",
+              "ToolTip": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Capes.Infra\\Configurations\\JwtConfig.cs",
+              "RelativeToolTip": "src\\Capes.Infra\\Configurations\\JwtConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T22:40:09.786Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "InfraConfig.cs",
+              "DocumentMoniker": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Capes.Infra\\Configurations\\InfraConfig.cs",
+              "RelativeDocumentMoniker": "src\\Capes.Infra\\Configurations\\InfraConfig.cs",
+              "ToolTip": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Capes.Infra\\Configurations\\InfraConfig.cs",
+              "RelativeToolTip": "src\\Capes.Infra\\Configurations\\InfraConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T22:38:37.137Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "IBaseService.cs",
+              "DocumentMoniker": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Application\\Interfaces\\Services\\IBaseService.cs",
+              "RelativeDocumentMoniker": "src\\Application\\Interfaces\\Services\\IBaseService.cs",
+              "ToolTip": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Application\\Interfaces\\Services\\IBaseService.cs",
+              "RelativeToolTip": "src\\Application\\Interfaces\\Services\\IBaseService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAgAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T22:37:59.313Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Settings.cs",
+              "DocumentMoniker": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Application\\Settings.cs",
+              "RelativeDocumentMoniker": "src\\Application\\Settings.cs",
+              "ToolTip": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Application\\Settings.cs",
+              "RelativeToolTip": "src\\Application\\Settings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T22:31:18.998Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Capes.Application.csproj",
+              "DocumentMoniker": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Application\\Capes.Application.csproj",
+              "RelativeDocumentMoniker": "src\\Application\\Capes.Application.csproj",
+              "ToolTip": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Application\\Capes.Application.csproj",
+              "RelativeToolTip": "src\\Application\\Capes.Application.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-16T22:28:14.098Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ITokenService.cs",
+              "DocumentMoniker": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Application\\Interfaces\\Services\\ITokenService.cs",
+              "RelativeDocumentMoniker": "src\\Application\\Interfaces\\Services\\ITokenService.cs",
+              "ToolTip": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Application\\Interfaces\\Services\\ITokenService.cs",
+              "RelativeToolTip": "src\\Application\\Interfaces\\Services\\ITokenService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAYAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T22:27:22.501Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Application\\Services\\TokenService.cs",
+              "RelativeDocumentMoniker": "src\\Application\\Services\\TokenService.cs",
+              "ToolTip": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Application\\Services\\TokenService.cs",
+              "RelativeToolTip": "src\\Application\\Services\\TokenService.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAuwAwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T22:25:54.536Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Application\\Interfaces\\Repository\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "src\\Application\\Interfaces\\Repository\\IUserRepository.cs",
+              "ToolTip": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Application\\Interfaces\\Repository\\IUserRepository.cs",
+              "RelativeToolTip": "src\\Application\\Interfaces\\Repository\\IUserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAsAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T22:23:59.756Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Capes.Infra\\Repository\\UserRepository.cs",
+              "RelativeDocumentMoniker": "src\\Capes.Infra\\Repository\\UserRepository.cs",
+              "ToolTip": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Capes.Infra\\Repository\\UserRepository.cs",
+              "RelativeToolTip": "src\\Capes.Infra\\Repository\\UserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T22:22:02.148Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Entity.cs",
+              "DocumentMoniker": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Domain\\Models\\Entity.cs",
+              "RelativeDocumentMoniker": "src\\Domain\\Models\\Entity.cs",
+              "ToolTip": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Domain\\Models\\Entity.cs",
+              "RelativeToolTip": "src\\Domain\\Models\\Entity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T21:14:36.958Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Badge.cs",
+              "DocumentMoniker": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Domain\\Models\\Badge.cs",
+              "RelativeDocumentMoniker": "src\\Domain\\Models\\Badge.cs",
+              "ToolTip": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Domain\\Models\\Badge.cs",
+              "RelativeToolTip": "src\\Domain\\Models\\Badge.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T21:13:52.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Comment.cs",
+              "DocumentMoniker": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Domain\\Models\\Comment.cs",
+              "RelativeDocumentMoniker": "src\\Domain\\Models\\Comment.cs",
+              "ToolTip": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Domain\\Models\\Comment.cs",
+              "RelativeToolTip": "src\\Domain\\Models\\Comment.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T21:12:17.007Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Post.cs",
+              "DocumentMoniker": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Domain\\Models\\Post.cs",
+              "RelativeDocumentMoniker": "src\\Domain\\Models\\Post.cs",
+              "ToolTip": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Domain\\Models\\Post.cs",
+              "RelativeToolTip": "src\\Domain\\Models\\Post.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T21:12:09.863Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Capes.Infra\\Context\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "src\\Capes.Infra\\Context\\AppDbContext.cs",
+              "ToolTip": "C:\\dev\\big-winners\\hackathon-capes\\Back-end\\capes.backend\\src\\Capes.Infra\\Context\\AppDbContext.cs",
+              "RelativeToolTip": "src\\Capes.Infra\\Context\\AppDbContext.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAkwBwAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T21:00:57.062Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

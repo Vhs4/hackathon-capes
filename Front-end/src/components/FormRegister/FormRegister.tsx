@@ -134,12 +134,12 @@ export default function FormRegister() {
         setFormData(prevData => ({ ...prevData, [value]: checked }));
     };
 
-    const handleRegister = () => {
+    const handleRegister = async () => {
         const result = formSchema.safeParse(formData);
         if (result.success) {
             toast.success('Cadastro realizado com sucesso!');
             const { confirmEmail, confirmPassword, naoPossuoVinculoInstituicao, possuoVinculoInstituicao, ...data } = result.data;
-            createUserAPI(data).then((response) => {
+         await  createUserAPI(data).then((response) => {
                 console.log(response);
             }
             );

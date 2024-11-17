@@ -1,0 +1,6 @@
+@capes.backend_HostAddress = http://localhost:5239
+
+GET {{capes.backend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,15 @@
+C:\dev\capes.backend\src\Application\bin\Release\net8.0\Capes.Application.deps.json
+C:\dev\capes.backend\src\Application\bin\Release\net8.0\Capes.Application.dll
+C:\dev\capes.backend\src\Application\bin\Release\net8.0\Capes.Application.pdb
+C:\dev\capes.backend\src\Application\bin\Release\net8.0\Capes.Domain.dll
+C:\dev\capes.backend\src\Application\bin\Release\net8.0\Capes.Domain.pdb
+C:\dev\capes.backend\src\Application\obj\Release\net8.0\Capes.Application.csproj.AssemblyReference.cache
+C:\dev\capes.backend\src\Application\obj\Release\net8.0\Capes.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\capes.backend\src\Application\obj\Release\net8.0\Capes.Application.AssemblyInfoInputs.cache
+C:\dev\capes.backend\src\Application\obj\Release\net8.0\Capes.Application.AssemblyInfo.cs
+C:\dev\capes.backend\src\Application\obj\Release\net8.0\Capes.Application.csproj.CoreCompileInputs.cache
+C:\dev\capes.backend\src\Application\obj\Release\net8.0\Capes.Ap.140B24DB.Up2Date
+C:\dev\capes.backend\src\Application\obj\Release\net8.0\Capes.Application.dll
+C:\dev\capes.backend\src\Application\obj\Release\net8.0\refint\Capes.Application.dll
+C:\dev\capes.backend\src\Application\obj\Release\net8.0\Capes.Application.pdb
+C:\dev\capes.backend\src\Application\obj\Release\net8.0\ref\Capes.Application.dll
