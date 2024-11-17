@@ -1,0 +1,1 @@
+Adicione na .env um VITE_GPT_KEY="SUA CHAVE DA API DO CHAT GPT"

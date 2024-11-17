@@ -97,7 +97,12 @@ const RootHeader = () => {
                                 <li className="text-[16px] leading-6 font-normal text-[#333]">Ajuda</li>
                             </a>
                         </ul>
-                        <Link to={'/meu-espaco'}></Link>
+                        <Link to={'/login'}>
+                        <button className="rounded-[4px] pt-[8.5px] pb-[9.5px] text-center border px-[13px]
+                        flex items-center justify-center text-[16px] leading-6 text-[#1C1C5E] border-black">
+                            Login
+                        </button>
+                    </Link>
                     </div>
                 </div>
                 <div className="mt-4">

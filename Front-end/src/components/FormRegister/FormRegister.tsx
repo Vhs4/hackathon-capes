@@ -71,6 +71,7 @@ export default function FormRegister() {
             name: 'gender', 
             type: 'select', 
             options: [
+                { label: 'Selecione', value: '' },
                 { label: 'Prefiro não informar', value: Gender.PreferNotToSay },
                 { label: 'Masculino', value: Gender.Male },
                 { label: 'Feminino', value: Gender.Female }
@@ -82,6 +83,7 @@ export default function FormRegister() {
             name: 'courseType', 
             type: 'select', 
             options: [
+                { label: 'Selecione', value: '' },
                 { label: 'Ensino médio', value: CourseType.HighSchool },
                 { label: 'Técnico', value: CourseType.Technical },
                 { label: 'Graduação', value: CourseType.Undergraduate },

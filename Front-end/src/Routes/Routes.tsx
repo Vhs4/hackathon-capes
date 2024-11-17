@@ -4,20 +4,28 @@ import Home from "../pages/Home/Home";
 import ProtectedRoute from "./ProtectedRoute";
 import Register from "../pages/Register/Register";
 import Login from "../pages/Login/Login";
+import CapesLab from "@/pages/CapesLab/CapesLab";
 
 export const router = createBrowserRouter([
     {
       path: "/",
       element: <App />,
       children: [
-        { path: "", element: <Register /> },
-        { path: "register", element: <Register /> },
-        { path: "login", element: <Login /> },
         {
-          path: "home",
+          path: "",
           element: (
             <ProtectedRoute>
               <Home />
+            </ProtectedRoute>
+          ),
+        },
+        { path: "register", element: <Register /> },
+        { path: "login", element: <Login /> },
+        {
+          path: "capeslab",
+          element: (
+            <ProtectedRoute>
+              <CapesLab />
             </ProtectedRoute>
           ),
         },
