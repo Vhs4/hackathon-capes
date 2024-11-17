@@ -11,7 +11,7 @@ type ButtonProps = {
   type?: "button" | "submit" | "reset" | undefined;
 };
 
-const Button: React.FC<ButtonProps> = ({
+const ButtonSystem: React.FC<ButtonProps> = ({
   children,
   className,
   variant,
@@ -46,4 +46,4 @@ const Button: React.FC<ButtonProps> = ({
   );
 };
 
-export default Button;
+export default ButtonSystem;

@@ -3,7 +3,7 @@ import { z } from 'zod';
 import { CheckboxField } from '../CheckboxField/CheckboxField';
 import { SectionTitle } from '../SectionTitle/SectionTitle';
 import { InputFormRegister } from '../InputFormRegister/InputFormRegister';
-import Button from '../Button/Button';
+import Button from '../ButtonSystem/ButtonSystem';
 import { toast } from 'react-toastify';
 import { createUserAPI } from '../../services/api';
 import { useAuth } from '@/contexts/UseAuth';

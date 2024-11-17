@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { z } from 'zod';
-import Button from '../Button/Button';
+import Button from '../ButtonSystem/ButtonSystem';
 import { toast } from 'react-toastify';
 import { useAuth } from '../../contexts/UseAuth';
 import { Mail } from 'lucide-react'

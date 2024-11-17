@@ -1,4 +1,4 @@
-import Button from '../Button/Button'
+import Button from '../ButtonSystem/ButtonSystem'
 
 const CapesLabButton = () => {
   return (

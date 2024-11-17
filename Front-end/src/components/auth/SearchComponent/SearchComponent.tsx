@@ -7,7 +7,7 @@ import XFechar from '@/assets/svgs/XFechar';
 import { SelectField } from '@/components/SelectField/SelectField';
 import { useAuth } from '@/contexts/UseAuth';
 import IconeMicrofone from '@/assets/svgs/IconeMIcrofone';
-import Button from '@/components/Button/Button';
+import Button from '@/components/ButtonSystem/ButtonSystem';
 import CapesLabButton from '@/components/CapesLabButton/CapesLabButton';
 import SwitchAzul from '@/components/SwitchAzul/SwitchAzul';
 
