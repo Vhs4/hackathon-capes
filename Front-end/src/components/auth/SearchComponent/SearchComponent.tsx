@@ -124,7 +124,7 @@ const SearchComponent = () => {
                                 Defina o escopo de busca
                             </Button>
                             {isDropdownScopeOpen && (
-                                <div className="absolute bg-white shadow-lg mt-2 pt-[14px] pb-[20px] px-[15px] w-[316px] border border-gray-200 rounded-md">
+                                <div className="absolute bg-white shadow-lg z-50 mt-2 pt-[14px] pb-[20px] px-[15px] w-[316px] border border-gray-200 rounded-md">
                                     <div className="flex flex-col w-full">
                                         <div className="flex justify-end">
                                             <button onClick={closeDropdownScope}><XFechar /></button>
