@@ -69,6 +69,12 @@ const CapesLab = () => {
         </div>
       </div>
       <div className="mb-[26px]">
+        <div className="flex mb-[50px]">
+          <ButtonSystem className='rounded' variant={2}>Área do Pesquisador</ButtonSystem>
+          <ButtonSystem className='rounded' variant={2}>Rede Acadêmica</ButtonSystem>
+          <ButtonSystem variant={2} className='bg-[#1c1c5e] text-white rounded'>Assistente de Pesquisa CAPESLab</ButtonSystem>
+          <ButtonSystem className='rounded' variant={2}>Minha conta</ButtonSystem>
+        </div>
         <div className='border-b border-solid border-b-orange-500 flex items-center pb-[9px] text-[28px] font-semibold text-[##3E3E3EFC]'>
           <span className='mr-2'><img src="/imgs/logogptpintada.png" width={38} height={38} alt="Logo ChatGpt" /></span>
           <p>Assistente de Pesquisa CAPESLab</p>
