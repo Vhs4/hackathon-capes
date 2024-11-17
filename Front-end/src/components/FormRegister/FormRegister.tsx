@@ -222,17 +222,6 @@ registerUser(data.email, data.username, data.password);
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col flex-1 shrink justify-center pb-4 text-base leading-6 basis-0 max-w-[1230px] min-w-[240px] text-neutral-800 max-md:max-w-full">
-                    <div className="flex flex-col items-start px-1.5 pt-6 pb-2 w-full max-w-[1230px] min-h-[56px] max-md:max-w-full">
-                        <div className="flex mt-2 text-base leading-6 min-h-[24px] text-neutral-800">
-                            <CheckboxField
-                                label="Não possuo vínculo com a instituição"
-                                value="naoPossuoVinculoInstituicao"
-                                onChange={(e) => handleCheckboxChange('naoPossuoVinculoInstituicao', e.target.checked)}
-                            />
-                        </div>
-                    </div>
-                </div>
             </div>
             <div className="flex gap-8 my-5 mx-auto">
                 <Button variant={5} onClick={handleRegister}>Confirmar</Button>
