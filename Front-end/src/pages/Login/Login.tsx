@@ -1,6 +1,8 @@
+import FormLogin from "../../components/FormLogin/FormLogin"
+
 const Login = () => {
   return (
-    <div>Login</div>
+    <FormLogin />
   )
 }
 
