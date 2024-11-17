@@ -56,7 +56,10 @@ export const UserProvider = ({ children }: Props) => {
           navigate("/home");
         }
       })
-      .catch((e) => toast.warning("Ocorreu um erro no servidor",));
+      .catch((e) => {
+        toast.warning("Ocorreu um erro no servidor",)
+        console.log(e)
+      });
   };
 
   const loginUser = async (username: string, password: string) => {
@@ -75,7 +78,10 @@ export const UserProvider = ({ children }: Props) => {
           navigate("/home");
         }
       })
-      .catch((e) => toast.warning("Ocorreu um erro no servidor"));
+      .catch((e) => {
+        toast.warning("Ocorreu um erro no servidor",)
+        console.log(e)
+      });
   };
 
   const isLoggedIn = () => {
