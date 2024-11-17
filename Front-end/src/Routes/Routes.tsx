@@ -5,6 +5,7 @@ import ProtectedRoute from "./ProtectedRoute";
 import Register from "../pages/Register/Register";
 import Login from "../pages/Login/Login";
 import CapesLab from "@/pages/CapesLab/CapesLab";
+import Search from "@/pages/Search/Search";
 
 export const router = createBrowserRouter([
     {
@@ -26,6 +27,14 @@ export const router = createBrowserRouter([
           element: (
             <ProtectedRoute>
               <CapesLab />
+            </ProtectedRoute>
+          ),
+        },
+        {
+          path: "search",
+          element: (
+            <ProtectedRoute>
+              <Search />
             </ProtectedRoute>
           ),
         },

@@ -49,7 +49,7 @@ const SearchComponent = () => {
 
     const onSubmit = (data: FormValues) => {
         console.log("Formulário enviado com sucesso:", data);
-        
+
         const queryParams = new URLSearchParams();
         if (data.search) queryParams.append('search', data.search);
         if (data.semanticaOtimizada) queryParams.append('semanticaOtimizada', String(data.semanticaOtimizada));
@@ -58,7 +58,7 @@ const SearchComponent = () => {
         if (data.livros) queryParams.append('livros', String(data.livros));
         if (data.artigos) queryParams.append('artigos', String(data.artigos));
         if (data.tipoMaterial) queryParams.append('tipoMaterial', data.tipoMaterial);
-        
+
         navigate(`/search?${queryParams.toString()}`);
     };
 
@@ -86,18 +86,6 @@ const SearchComponent = () => {
 
     return (
         <main className="flex flex-col max-w-screen-mini mini:max-w-screen-mini-max mini-max:max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg">
-            <header className="flex flex-col max-w-full text-center text-neutral-800 w-[1220px]">
-                <div className="flex flex-col w-full max-md:max-w-full">
-                    <div className="flex flex-col w-full max-md:max-w-full">
-                        <h1 className="px-16 pt-1.5 w-full text-4xl leading-10 max-md:px-5 max-md:max-w-full">
-                            Aqui você encontra conteúdo científico <br /> diversificado para deixar sua pesquisa ainda melhor.
-                        </h1>
-                        <p className="self-start mt-6 text-sm leading-5 max-md:max-w-full">
-                            Desde livros, normas técnicas, patentes e estatísticas até vídeos e áudios reunidos em um só lugar.
-                        </p>
-                    </div>
-                </div>
-            </header>
             <form
                 onSubmit={handleSubmit(onSubmit)}
                 className="flex overflow-hidden flex-col px-7 pt-3 pb-6 mt-12 w-full bg-white border-b-[3px] border-blue-950 shadow-[0px_3px_5px_rgba(0,0,0,0.15)] max-md:px-5 max-md:mt-10 max-md:max-w-full">
