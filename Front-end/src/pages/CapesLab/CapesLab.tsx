@@ -1,6 +1,5 @@
 import ButtonSystem from '@/components/ButtonSystem/ButtonSystem'
 import ChatBot from '@/components/ChatBot/ChatBot'
-import { CheckboxField } from '@/components/CheckboxField/CheckboxField'
 import { useAuth } from '@/contexts/UseAuth'
 
 const CapesLab = () => {
@@ -14,7 +13,7 @@ const CapesLab = () => {
     const agora = new Date();
     const diaDaSemana = diasDaSemana[agora.getDay()];
     const dia = agora.getDate().toString().padStart(2, '0');
-    const mes = (agora.getMonth() + 1).toString().padStart(2, '0'); // Meses começam em 0
+    const mes = (agora.getMonth() + 1).toString().padStart(2, '0');
     const ano = agora.getFullYear();
     const horas = agora.getHours().toString().padStart(2, '0');
     const minutos = agora.getMinutes().toString().padStart(2, '0');
