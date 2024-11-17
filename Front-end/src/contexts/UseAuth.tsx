@@ -53,7 +53,7 @@ export const UserProvider = ({ children }: Props) => {
           setToken(res?.data.token!);
           setUser(userObj!);
           toast.success("Login efetuado com sucesso!");
-          navigate("/home");
+          navigate("/");
         }
       })
       .catch((e) => {
@@ -75,7 +75,7 @@ export const UserProvider = ({ children }: Props) => {
           setToken(res?.data.token!);
           setUser(userObj!);
           toast.success("Login efetuado com sucesso!");
-          navigate("/home");
+          navigate("/");
         }
       })
       .catch((e) => {
