@@ -12,7 +12,8 @@ export default {
       'dark': '#000',
     }),
     boxShadow: {
-      'button-variant-2': '0px 8px 16px 0px rgba(0, 0, 0, 0.15);'
+      'button-variant-2': '0px 8px 16px 0px rgba(0, 0, 0, 0.15);',
+      'input-form': ' 0px 3.2px 4.8px 0px rgba(0, 0, 0, 0.15)'
   },
 },
   plugins: [],

@@ -1,14 +1,10 @@
-import Button from "../../components/Button/Button"
+import { FormRegister } from "../../components/FormRegister/FormRegister"
 
 const Register = () => {
   return (
-    <div className="flex flex-col gap-5">
-      <Button icon="/imgs/logocapes.png" iconPosition="right" variant={1}>Register</Button>
-      <Button variant={2}>Register</Button>
-      <Button variant={3}>Register</Button>
-      <Button variant={4}>Register</Button>
-      <Button variant={5}>Register</Button>
-    </div>
+    <main className="flex flex-col">
+      <FormRegister />
+    </main>
   )
 }
 
