@@ -5,7 +5,7 @@ interface InputFormRegisterProps {
   label: string;
   name: string;
   type?: string;
-  options?: string[];
+  options?: string[] | { label: string; value: string; }[];
   placeholder?: string;
   fullWidth?: boolean;
   hint?: string;

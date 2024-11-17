@@ -2,7 +2,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 
 export const handleError = (error: any) => {
-  if (axios.isAxiosError(error)) {
+   if (axios.isAxiosError(error)) {
     var err = error.response;
     if (Array.isArray(err?.data.errors)) {
       for (let val of err?.data.errors) {
@@ -19,10 +19,8 @@ export const handleError = (error: any) => {
         });
       }
     } else if (err?.data) {
+      toast.warning(err.data);
       console.log(err.data)
-        toast.warning(err.data, {
-        position: "bottom-right",
-      });
     } else if (err?.status == 401) {
       console.log(err.data)
         toast.warning("Por favor entre na sua conta", {

@@ -4,25 +4,25 @@ import { z } from 'zod';
 import Button from '../Button/Button';
 import { toast } from 'react-toastify';
 import { useAuth } from '../../contexts/UseAuth';
+import { Mail } from 'lucide-react'
 
-// Esquema de validação com Zod
 const loginSchema = z.object({
+    email: z.string().email('E-mail inválido'),
     username: z.string().min(1, 'O nome de usuário é obrigatório').max(50, 'Máximo de 50 caracteres'),
     password: z.string().min(6, 'A senha deve ter pelo menos 6 caracteres')
 });
 
 const FormLogin = () => {
-    const [formData, setFormData] = useState({ username: '', password: '' });
+    const [formData, setFormData] = useState({ email: '', username: '', password: '' });
     const [errors, setErrors] = useState<Record<string, string>>({});
-    const { loginUser } = useAuth();
-    const navigate = useNavigate();
+    const { registerUser } = useAuth();
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { id, value } = e.target;
         setFormData({ ...formData, [id]: value });
     };
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
 
         const result = loginSchema.safeParse(formData);
@@ -36,9 +36,7 @@ const FormLogin = () => {
             setErrors(fieldErrors);
             toast.error('Ocorreu um erro, tente novamente!');
         } else {
-            toast.success("Login efetuado com sucesso!");
-            loginUser(result.data.username, result.data.password);
-            navigate('/home');
+           await registerUser(result.data.email, result.data.username, result.data.password);
             setErrors({});
         }
     };
@@ -47,6 +45,24 @@ const FormLogin = () => {
         <main className="flex flex-col bg-white items-center justify-center mx-auto my-8">
             <h1 className="w-full text-xl leading-6 whitespace-nowrap text-neutral-800">Entrar</h1>
             <form className="flex flex-col justify-center mt-6 w-full" onSubmit={handleSubmit}>
+            <div className="flex flex-col px-1.5 w-full max-w-[270px] min-h-[54px]">
+                    <div className="flex relative flex-col w-full">
+                        <label htmlFor="email" className="sr-only">
+                            E-mail
+                        </label>
+                        <input
+                            id="email"
+                            value={formData.email}
+                            onChange={handleInputChange}
+                            placeholder="Insira seu e-mail"
+                            className="flex overflow-hidden z-0 flex-col justify-center py-2.5 pr-3 pl-8 w-full text-base bg-blue-100 min-h-[38px] text-neutral-500"
+                        />
+                        <div className="absolute p-3 text-base font-black leading-4 whitespace-nowrap text-blue-950 w-[34px]">
+                       <Mail width={14} height={20}/>
+                        </div>
+                        {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
+                    </div>
+                </div>
                 <div className="flex flex-col px-1.5 w-full max-w-[270px] min-h-[54px]">
                     <div className="flex relative flex-col w-full">
                         <label htmlFor="username" className="sr-only">

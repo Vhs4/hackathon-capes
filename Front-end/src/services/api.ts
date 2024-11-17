@@ -2,7 +2,7 @@ import axios from "axios";
 import { API_URL } from "../constants";
 import { UserProfileToken } from "../models/User";
 import { handleError } from "../helpers/ErrorHandler";
-
+import { toast } from "react-toastify";
 
 export const loginAPI = async (username: string, password: string) => {
     try {
@@ -30,6 +30,11 @@ export const registerAPI = async (
       return data;
     } catch (error) {
       handleError(error);
+      if (axios.isAxiosError(error) && error.response) {
+        toast.error(error.response.data.message);
+      } else {
+        toast.error("Ocorreu um erro desconhecido");
+      }
     }
   };
 
@@ -39,5 +44,10 @@ export const registerAPI = async (
       return data;
     } catch (error) {
       handleError(error);
+      if (axios.isAxiosError(error) && error.response) {
+        toast.error(error.response.data.message);
+      } else {
+        toast.error("Ocorreu um erro desconhecido");
+      }
     }
   };

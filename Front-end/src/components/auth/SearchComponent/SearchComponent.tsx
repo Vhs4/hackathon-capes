@@ -1,15 +1,15 @@
 import { useState } from 'react';
-import CapesLabButton from '../../CapesLabButton/CapesLabButton';
-import Button from '../../Button/Button';
-import IconeMicrofone from '../../../assets/svgs/IconeMIcrofone';
-import SwitchAzul from '../../SwitchAzul/SwitchAzul';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm, Controller } from 'react-hook-form';
 import { z } from 'zod';
-import { useAuth } from '../../../contexts/UseAuth';
-import XFechar from '../../../assets/svgs/XFechar';
-import { SelectField } from '../../SelectField/SelectField';
 import { useNavigate } from 'react-router-dom';
+import XFechar from '@/assets/svgs/XFechar';
+import { SelectField } from '@/components/SelectField/SelectField';
+import { useAuth } from '@/contexts/UseAuth';
+import IconeMicrofone from '@/assets/svgs/IconeMIcrofone';
+import Button from '@/components/Button/Button';
+import CapesLabButton from '@/components/CapesLabButton/CapesLabButton';
+import SwitchAzul from '@/components/SwitchAzul/SwitchAzul';
 
 const schema = z.object({
     semanticaOtimizada: z.boolean().optional(),

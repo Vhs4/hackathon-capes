@@ -6,14 +6,15 @@ import { InputFormRegister } from '../InputFormRegister/InputFormRegister';
 import Button from '../Button/Button';
 import { toast } from 'react-toastify';
 import { createUserAPI } from '../../services/api';
+import { useAuth } from '@/contexts/UseAuth';
 
 
 const formSchema = z.object({
     name: z.string().min(1),
-    gender: z.enum(["Prefiro não informar", "Maculino", "Feminino"]),
-    courseType: z.enum(["Ensino médio", "Técnico", "Graduação", "Pós-graduação", "Mestrado", "Doutorado", "Pós doutorado"]),
+    gender: z.enum(["Prefiro não informar", "Masculino", "Feminino"]), // Prefiro não informar: 0, Masculino: 1, Feminino: 2
+    courseType: z.enum(["0", "1", "2", "3", "4", "5", "6", "7"]).transform(value => parseInt(value)), 
     course: z.string().min(1),
-    courseStatus: z.enum(["Em andamento", "Concluído", "Incompleto"]),
+    courseStatus: z.enum(["0", "1", "2"]).transform(value => parseInt(value)),
     schoolOrCollege: z.string().optional(),
     researchArea: z.string().optional(),
     currentProfession: z.string().optional(),
@@ -39,13 +40,71 @@ type FormSchema = z.infer<typeof formSchema>;
 export default function FormRegister() {
     const [formData, setFormData] = useState<FormSchema>({} as FormSchema);
     const [errors, setErrors] = useState<z.ZodIssue[]>([]);
+    const { registerUser } = useAuth();
+
+    enum Gender {
+        PreferNotToSay = "Prefiro não informar",
+        Male = "Masculino",
+        Female = "Feminino"
+    }
+
+    enum CourseType {
+        HighSchool = "1",
+        Technical = "2",
+        Undergraduate = "3",
+        Postgraduate = "4",
+        Masters = "5",
+        Doctorate = "6",
+        PostDoctorate = "7"
+    }
+
+    enum CourseStatus {
+        InProgress = "0",
+        Completed = "1",
+        Incomplete = "2"
+    }
 
     const personalFields = [
         { label: 'Nome completo', name: 'name', placeholder: 'Digite seu nome completo', required: true },
-        { label: 'Sexo', name: 'gender', type: 'select', options: ['Selecione', 'Prefiro não informar', 'Maculino', 'Feminino'] },
-        { label: 'Tipo de curso', type: 'select', name: 'courseType', options: ['Selecione', 'Ensino médio', 'Técnico', 'Graduação', 'Pós-graduação', 'Mestrado', 'Doutorado', 'Pós doutorado'], required: true },
+        { 
+            label: 'Sexo', 
+            name: 'gender', 
+            type: 'select', 
+            options: [
+                { label: 'Prefiro não informar', value: Gender.PreferNotToSay },
+                { label: 'Masculino', value: Gender.Male },
+                { label: 'Feminino', value: Gender.Female }
+            ],
+            required: true 
+        },
+        { 
+            label: 'Tipo de curso', 
+            name: 'courseType', 
+            type: 'select', 
+            options: [
+                { label: 'Ensino médio', value: CourseType.HighSchool },
+                { label: 'Técnico', value: CourseType.Technical },
+                { label: 'Graduação', value: CourseType.Undergraduate },
+                { label: 'Pós-graduação', value: CourseType.Postgraduate },
+                { label: 'Mestrado', value: CourseType.Masters },
+                { label: 'Doutorado', value: CourseType.Doctorate },
+                { label: 'Pós doutorado', value: CourseType.PostDoctorate }
+            ],
+            required: true 
+        },
         { label: 'Curso', name: 'course', placeholder: 'Digite o nome do curso', required: true },
-        { label: 'Situação atual do curso', type: 'select', name: 'courseStatus', options: ['Selecione', 'Em andamento', 'Concluído', 'Incompleto'], required: true },
+        { 
+            label: 'Situação atual do curso', 
+            type: 'select', 
+            name: 'courseStatus', 
+            options: [
+                { label: 'Selecione', value: '' },
+                { label: 'Em andamento', value: CourseStatus.InProgress },
+                { label: 'Concluído', value: CourseStatus.Completed },
+                { label: 'Incompleto', value: CourseStatus.Incomplete }
+            ], 
+            required: true 
+        },
         { label: 'Instituição de ensino', name: 'schoolOrCollege', placeholder: 'Digite o nome da instituição', fullWidth: true },
         { label: 'Área de pesquisa', name: 'researchArea', placeholder: 'Digite a sua área de pesquisa', fullWidth: true },
         { label: 'Cargo profissional', name: 'currentProfession', placeholder: 'Digite seu cargo profissional' },
@@ -82,7 +141,7 @@ export default function FormRegister() {
                 console.log(response);
             }
             );
-
+registerUser(data.email, data.username, data.password);
             console.log(data);
 
         } else {
