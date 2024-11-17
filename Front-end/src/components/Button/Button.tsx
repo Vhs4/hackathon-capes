@@ -5,9 +5,10 @@ type ButtonProps = {
   children: React.ReactNode;
   variant: 1 | 2 | 3 | 4 | 5;
   className?: string;
-  onClick?: () => void;
+  onClick?: React.MouseEventHandler<HTMLButtonElement> | undefined;
   icon?: string; // Caminho ou URL da imagem para o ícone
   iconPosition?: "left" | "right"; // Posição do ícone
+  type?: "button" | "submit" | "reset" | undefined; // Tipo do botão
 };
 
 const Button: React.FC<ButtonProps> = ({
@@ -17,6 +18,7 @@ const Button: React.FC<ButtonProps> = ({
   onClick,
   icon,
   iconPosition = "left",
+  type = "button",
 }) => {
   const baseStyles = "font-normal flex items-center justify-center transition-all duration-300";
   const variants = {
@@ -32,7 +34,7 @@ const Button: React.FC<ButtonProps> = ({
   const classNames = twMerge(baseStyles, selectedVariant, className);
 
   return (
-    <button className={classNames} onClick={onClick}>
+    <button className={classNames} onClick={onClick} type={type}>
       {icon && iconPosition === "left" && (
         <img src={icon} alt="icon" className="w-[13px] h-[13px] mr-2" />
       )}
