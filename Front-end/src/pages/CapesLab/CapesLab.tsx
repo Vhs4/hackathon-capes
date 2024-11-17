@@ -1,8 +1,27 @@
+import ButtonSystem from '@/components/ButtonSystem/ButtonSystem'
 import ChatBot from '@/components/ChatBot/ChatBot'
+import { CheckboxField } from '@/components/CheckboxField/CheckboxField'
 import { useAuth } from '@/contexts/UseAuth'
 
 const CapesLab = () => {
   const { user } = useAuth()
+  const getUltimoAcesso = (): string => {
+    const diasDaSemana = [
+      "domingo", "segunda-feira", "terça-feira", "quarta-feira",
+      "quinta-feira", "sexta-feira", "sábado"
+    ];
+
+    const agora = new Date();
+    const diaDaSemana = diasDaSemana[agora.getDay()];
+    const dia = agora.getDate().toString().padStart(2, '0');
+    const mes = (agora.getMonth() + 1).toString().padStart(2, '0'); // Meses começam em 0
+    const ano = agora.getFullYear();
+    const horas = agora.getHours().toString().padStart(2, '0');
+    const minutos = agora.getMinutes().toString().padStart(2, '0');
+    const segundos = agora.getSeconds().toString().padStart(2, '0');
+
+    return `Seu último acesso foi ${diaDaSemana} (${dia}/${mes}/${ano}) às ${horas}:${minutos}:${segundos}`;
+  };
 
   return (
     <main className='max-w-screen-lg w-full'>
@@ -11,7 +30,7 @@ const CapesLab = () => {
           <p>
             <span className="text-[#212529] text-xl font-bold leading-normal">Olá, {user?.username}</span><span className="text-[#212529] text-xl font-normal leading-normal"> </span><span className="text-[#212529] text-xl font-bold leading-normal">({user?.email})</span>
           </p>
-          <p>Seu últmo acesso foi segunda-feira (30/10/-2024) às 16:54:31</p>
+          <p>{getUltimoAcesso()}</p>
         </div>
         <div className="flex gap-4">
           <div className="w-[98px] max-w-full border items-center flex flex-col justify-between h-[90px] rounded-[8px] border-[rgba(0, 0, 0, 0.13)] p-2">
@@ -57,13 +76,74 @@ const CapesLab = () => {
         </div>
       </div>
       <section className='mb-8 flex'>
-        <div className="w-1/3">
-        
+        <div className="w-1/3 flex flex-col gap-4 border-r border-gray-300 mr-[18px] pr-[9px] pt-[32px]">
+          <div className="flex flex-col justify-between w-full border border-gray-300 h-[132px] rounded-[4px] px-5 pt-[15px] pb-2">
+            <p className="text-[#1c1c5e] text-xs font-bold font-['Raleway'] leading-[18px]">Pesquisa STEM</p>
+            <p className="text-[#212529] text-xs font-normal font-['Raleway'] leading-none">Discussão sobre mudanças climáticas e seu impacto.</p>
+            <ButtonSystem variant={2}>Ver desenvolvimento</ButtonSystem>
+          </div>
+          <div className="flex flex-col justify-between w-full border border-gray-300 h-[261px] rounded-[4px] px-5 pt-[15px] pb-2">
+            <p className="text-[#1c1c5e] text-xs font-bold font-['Raleway'] leading-[18px]">Biotecnologia na Educação: Abordagem transformadora</p>
+            <p className="text-[#212529] text-xs font-normal font-['Raleway'] leading-none">Pesquisa qualitativa sobre educação STEM nas escolas públicas</p>
+            <div className="w-[272px] text-[#212529] text-xs font-bold font-['Raleway'] leading-[21px]">Colaboradores:</div>
+            <div className="flex items-center hover:cursor-pointer gap-3">
+              <div className="w-8 h-8 bg-[#ececf0] rounded-full flex items-center justify-center border border-[#f6f6f6]">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.04972 7.46917C8.04972 6.4214 8.46595 5.41655 9.20683 4.67566C9.94772 3.93478 10.9526 3.51855 12.0003 3.51855C13.0481 3.51855 14.053 3.93478 14.7938 4.67566C15.5347 5.41655 15.951 6.4214 15.951 7.46917C15.951 8.51694 15.5347 9.5218 14.7938 10.2627C14.053 11.0036 13.0481 11.4198 12.0003 11.4198C10.9526 11.4198 9.94772 11.0036 9.20683 10.2627C8.46595 9.5218 8.04972 8.51694 8.04972 7.46917ZM8.04972 13.3951C6.74001 13.3951 5.48394 13.9154 4.55784 14.8415C3.63173 15.7676 3.11145 17.0237 3.11145 18.3334C3.11145 19.1192 3.42362 19.8728 3.97928 20.4285C4.53495 20.9842 5.28859 21.2963 6.07441 21.2963H17.9263C18.7121 21.2963 19.4657 20.9842 20.0214 20.4285C20.5771 19.8728 20.8892 19.1192 20.8892 18.3334C20.8892 17.0237 20.3689 15.7676 19.4428 14.8415C18.5167 13.9154 17.2607 13.3951 15.951 13.3951H8.04972Z" fill="#1C1C5E" />
+                </svg>
+              </div>
+              <div className="w-[272px] text-[#212529] text-xs font-bold font-['Raleway'] leading-[21px]">Felipe Souza</div>
+            </div>
+            <div className="flex items-center hover:cursor-pointer gap-3">
+              <div className="w-8 h-8 bg-[#ececf0] rounded-full flex items-center justify-center border border-[#f6f6f6]">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.04972 7.46917C8.04972 6.4214 8.46595 5.41655 9.20683 4.67566C9.94772 3.93478 10.9526 3.51855 12.0003 3.51855C13.0481 3.51855 14.053 3.93478 14.7938 4.67566C15.5347 5.41655 15.951 6.4214 15.951 7.46917C15.951 8.51694 15.5347 9.5218 14.7938 10.2627C14.053 11.0036 13.0481 11.4198 12.0003 11.4198C10.9526 11.4198 9.94772 11.0036 9.20683 10.2627C8.46595 9.5218 8.04972 8.51694 8.04972 7.46917ZM8.04972 13.3951C6.74001 13.3951 5.48394 13.9154 4.55784 14.8415C3.63173 15.7676 3.11145 17.0237 3.11145 18.3334C3.11145 19.1192 3.42362 19.8728 3.97928 20.4285C4.53495 20.9842 5.28859 21.2963 6.07441 21.2963H17.9263C18.7121 21.2963 19.4657 20.9842 20.0214 20.4285C20.5771 19.8728 20.8892 19.1192 20.8892 18.3334C20.8892 17.0237 20.3689 15.7676 19.4428 14.8415C18.5167 13.9154 17.2607 13.3951 15.951 13.3951H8.04972Z" fill="#1C1C5E" />
+                </svg>
+              </div>
+              <div className="w-[272px] text-[#212529] text-xs font-bold font-['Raleway'] leading-[21px]">Morgana Silveira Oliver</div>
+            </div>
+            <ButtonSystem variant={2}>Ver desenvolvimento</ButtonSystem>
+          </div>
+          <div className="flex flex-col w-full border border-gray-300 h-[132px] rounded-[4px] px-5 pt-[15px] pb-2">
+            <p className="text-[#1c1c5e] text-xs font-bold font-['Raleway'] leading-[18px]">Filtros</p>
+            <ul className='mt-[14px] flex flex-col gap-2'>
+              <li className='flex gap-[4px]'>
+                <input type="checkbox" name="" id="" />
+                <label htmlFor="filter1" className="text-[#212529] text-xs font-normal font-['Raleway'] leading-none">
+                  <p className="w-full h-[18px] text-[#212529] text-xs font-bold font-['Raleway'] leading-[18px]">Produção Nacional</p>
+                </label>
+              </li>
+              <li className='flex gap-[4px]'>
+                <input type="checkbox" name="" id="" />
+                <label htmlFor="filter1" className="text-[#212529] text-xs font-normal font-['Raleway'] leading-none">
+                  <p className="w-full h-[18px] text-[#212529] text-xs font-bold font-['Raleway'] leading-[18px]">Português</p>
+                </label>
+              </li>
+              <li className='flex gap-[4px]'>
+                <input type="checkbox" name="" id="" />
+                <label htmlFor="filter1" className="text-[#212529] text-xs font-normal font-['Raleway'] leading-none">
+                  <p className="w-full h-[18px] text-[#212529] text-xs font-bold font-['Raleway'] leading-[18px]">Grupo de Pesquisa Metod</p>
+                </label>
+              </li>
+            </ul>
+          </div>
         </div>
         <div className="w-full">
-      <ChatBot />
-      </div>
+          <ChatBot />
+        </div>
       </section>
+      <div className='h-[82px] bg-[#1c1c5e] mb-12 flex items-center pr-[31px] pl-[28px]'>
+        <div className="flex w-full gap-[17px]">
+          <div className="flex gap-[10px]">
+          <ButtonSystem icon='/imgs/compartilharbranco.png' variant={4} className='justify-center hover:text-white'>Compartilhar</ButtonSystem>
+          <ButtonSystem icon='/imgs/exportarbranco.png' variant={4} className='justify-center hover:text-white'>Exportar</ButtonSystem>
+          </div>
+          <ButtonSystem icon='/imgs/adicionarbranco.svg' variant={4} className='justify-center hover:text-white'>Adicionar Colaborador</ButtonSystem>
+        </div>
+      <div>
+        <ButtonSystem variant={5} className='bg-white'>Salvar</ButtonSystem>
+      </div>
+      </div>
     </main>
   )
 }
