@@ -5,6 +5,7 @@ import { SectionTitle } from '../SectionTitle/SectionTitle';
 import { InputFormRegister } from '../InputFormRegister/InputFormRegister';
 import Button from '../Button/Button';
 import { toast } from 'react-toastify';
+import { createUserAPI } from '../../services/api';
 
 
 const formSchema = z.object({
@@ -42,9 +43,9 @@ export default function FormRegister() {
     const personalFields = [
         { label: 'Nome completo', name: 'name', placeholder: 'Digite seu nome completo', required: true },
         { label: 'Sexo', name: 'gender', type: 'select', options: ['Selecione', 'Prefiro não informar', 'Maculino', 'Feminino'] },
-        { label: 'Tipo de curso', type: 'select', name: 'courseType', options: ['Ensino médio', 'Técnico', 'Graduação', 'Pós-graduação', 'Mestrado', 'Doutorado', 'Pós doutorado'], required: true },
+        { label: 'Tipo de curso', type: 'select', name: 'courseType', options: ['Selecione', 'Ensino médio', 'Técnico', 'Graduação', 'Pós-graduação', 'Mestrado', 'Doutorado', 'Pós doutorado'], required: true },
         { label: 'Curso', name: 'course', placeholder: 'Digite o nome do curso', required: true },
-        { label: 'Situação atual do curso', type: 'select', name: 'courseStatus', options: ['Em andamento', 'Concluído', 'Incompleto'], required: true },
+        { label: 'Situação atual do curso', type: 'select', name: 'courseStatus', options: ['Selecione', 'Em andamento', 'Concluído', 'Incompleto'], required: true },
         { label: 'Instituição de ensino', name: 'schoolOrCollege', placeholder: 'Digite o nome da instituição', fullWidth: true },
         { label: 'Área de pesquisa', name: 'researchArea', placeholder: 'Digite a sua área de pesquisa', fullWidth: true },
         { label: 'Cargo profissional', name: 'currentProfession', placeholder: 'Digite seu cargo profissional' },
@@ -77,6 +78,11 @@ export default function FormRegister() {
         if (result.success) {
             toast.success('Cadastro realizado com sucesso!');
             const { confirmEmail, confirmPassword, naoPossuoVinculoInstituicao, possuoVinculoInstituicao, ...data } = result.data;
+            createUserAPI(data).then((response) => {
+                console.log(response);
+            }
+            );
+
             console.log(data);
 
         } else {

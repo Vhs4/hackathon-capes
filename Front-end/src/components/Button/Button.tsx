@@ -6,9 +6,9 @@ type ButtonProps = {
   variant: 1 | 2 | 3 | 4 | 5;
   className?: string;
   onClick?: React.MouseEventHandler<HTMLButtonElement> | undefined;
-  icon?: string; // Caminho ou URL da imagem para o ícone
-  iconPosition?: "left" | "right"; // Posição do ícone
-  type?: "button" | "submit" | "reset" | undefined; // Tipo do botão
+  icon?: string;
+  iconPosition?: "left" | "right";
+  type?: "button" | "submit" | "reset" | undefined;
 };
 
 const Button: React.FC<ButtonProps> = ({

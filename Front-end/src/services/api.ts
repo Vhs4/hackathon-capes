@@ -6,7 +6,7 @@ import { handleError } from "../helpers/ErrorHandler";
 
 export const loginAPI = async (username: string, password: string) => {
     try {
-        const data = await axios.post<UserProfileToken>(API_URL + "/login", {
+        const data = await axios.post<UserProfileToken>(API_URL + "authenticator/signin", {
             username: username,
             password: password,
         });
@@ -22,11 +22,20 @@ export const registerAPI = async (
     password: string
   ) => {
     try {
-      const data = await axios.post<UserProfileToken>(API_URL + "account/register", {
+      const data = await axios.post<UserProfileToken>(API_URL + "authenticator/signin", {
         email: email,
         username: username,
         password: password,
       });
+      return data;
+    } catch (error) {
+      handleError(error);
+    }
+  };
+
+  export const createUserAPI = async (dados: any) => {
+    try {
+      const data = await axios.post(API_URL + "create", dados);
       return data;
     } catch (error) {
       handleError(error);
