@@ -6,7 +6,7 @@ import { ScrollArea } from "@/components/ui/scroll-area"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { CopyIcon } from 'lucide-react'
 
-const API_KEY = "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";
+const API_KEY = import.meta.env.VITE_GPT_KEY;
 const systemMessage = { role: "system", content: "Analise a mensagem a seguir e extraia as palavras-chave que são relevantes para buscar em títulos de artigos científicos. Com as palavras, junte-as de forma concisa criando uma frase única para encontrar em títulos de artigos ou em textos. Use termos em inglês para melhorar os resultados da busca." };
 
 interface Message {
